@@ -39,7 +39,10 @@ export default function Welcome() {
         <View style={styles.headerSpacer} />
         <Text style={styles.heading}>Big Deals,{"\n"}Bigger Savings</Text>
 
-        <TouchableOpacity style={styles.signupButton}>
+        <TouchableOpacity
+          style={styles.signupButton}
+          onPress={() => router.push("/(auth)/signup")}
+        >
           <Text style={styles.signupText}>Sign Up</Text>
         </TouchableOpacity>
 

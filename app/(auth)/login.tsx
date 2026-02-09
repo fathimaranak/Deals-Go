@@ -54,9 +54,12 @@ export default function Login() {
 
         {/* Phone Input */}
         <View style={styles.phoneRow}>
-          <View style={styles.countryCode}>
+          <TouchableOpacity
+            style={styles.countryCode}
+            onPress={() => router.push("/(auth)/select-country")}
+          >
             <Text style={styles.countryText}>+971</Text>
-          </View>
+          </TouchableOpacity>
 
           <TextInput
             placeholder="Enter Phone Number"
@@ -154,6 +157,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: 10,
     fontSize: 14,
+    color: "black",
   },
 
   button: {

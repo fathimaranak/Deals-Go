@@ -1,14 +1,3 @@
-import { Ionicons } from "@expo/vector-icons";
-import {
-    Image,
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
-} from "react-native";
-
 import ChevronRightGray from "@/assets/images/profile/chevron-right-gray.svg";
 import FavouritesIcon from "@/assets/images/profile/favourites-icon.svg";
 import LanguageIcon from "@/assets/images/profile/language-icon.svg";
@@ -20,9 +9,21 @@ import RedeemedIcon from "@/assets/images/profile/redeemed-icon.svg";
 import SettingsIcon from "@/assets/images/profile/settings-icon.svg";
 import SupportIcon from "@/assets/images/profile/support-icon.svg";
 import WalletIcon from "@/assets/images/profile/wallet-icon.svg";
+import { Ionicons } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
+import {
+    Image,
+    SafeAreaView,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
+} from "react-native";
 export default function ProfileScreen() {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="dark" />
       <View style={styles.headerContainer}>
         <View style={styles.header}>
           <TouchableOpacity style={styles.backButton}>
